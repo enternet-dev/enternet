@@ -1,0 +1,7 @@
+[Settings]
+    ID = "enternet"
+
+[build]
+    base = ""
+    publish = "dist/"
+    command = "npm run build"
