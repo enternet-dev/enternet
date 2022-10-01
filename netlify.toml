@@ -6,4 +6,7 @@
     publish = ".next"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"
+    package = "@netlify/plugin-nextjs"
+
+[[plugins]]
+    package = "@netlify/plugin-lighthouse"
