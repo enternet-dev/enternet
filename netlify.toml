@@ -2,5 +2,5 @@
     ID = "enternet"
 
 [build]
-    command = "npm run build"
+    command = "next build"
     publish = ".next"
