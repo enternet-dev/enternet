@@ -1,8 +1,21 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import { BaseCSS, GridThemeProvider } from "styled-bootstrap-grid";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "../theme";
+import { gridTheme } from "../theme/gridTheme";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeProvider theme={{}}>
+      <BaseCSS />
+      <GlobalStyle />
+      <GridThemeProvider gridTheme={gridTheme}>
+        <>
+          <Component {...pageProps} />
+        </>
+      </GridThemeProvider>
+    </ThemeProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
