@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <S.Main>
         <S.Title>Welcome to Enternet!</S.Title>
 
-        <S.Description>We are under construction</S.Description>
+        <S.Description>We are under construction (for now)</S.Description>
       </S.Main>
     </S.Container>
   );
